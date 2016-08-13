@@ -1,0 +1,41 @@
+/*
+* Today is Chinese Valentine's Day, 2016-8-9, and I received some yummy foods from you. 
+* So I write something in commemoration of this day.
+*/
+// The first time we met each other is an evening on July 22, 2016.
+// I experienced the most beautiful Beijing with the prettiest girl.
+ Boy i = new Boy("zqm");
+ Girl u = new Girl("wtw");
+// July 22, 2016
+ i.cycle();
+// Luckily, I met you.
+ i.meet(u);
+// Since then, you appear in my world .
+ i.talkTo(u);
+ u.shareStoriesTo(i);
+// And I find you are considerate, rational, filial, dignified and charming.
+// You are the epitome of everything I've ever looked for in another human being.
+ i.appreciate(u);
+// I've tasted the sweet and bitter of falling love.
+// But now I have no idea to eat the forbidden fruit again,
+// for I don't want to let each other down.
+// You said that you haven't been in a relationship with someone,
+// and that it's not appropriate time for a try.
+
+// Anyway, I'm always here whennever you feel happy or sorrow.
+if      (u.mood == "happy")
+    u.nextPtr->i;
+else if (u.mood = "sorrow")
+    u.nextPtr->i;
+else
+    u.nextPtr->i;
+
+if ((i.age<inf) && (sky.color == blue))
+{
+	return("I am here.");
+}
+// No matter the ending is perfect or not,
+// you are the apple of my eyes,
+// and you cannot disappear from my life.
+
+flower = i.send(u);

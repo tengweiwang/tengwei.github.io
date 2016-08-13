@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Gift for cth</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<audio autoplay="autoplay" loop="loop">
+  <source src="resources/hunli.mp3" type="audio/mpeg" />
+Your browser does not support the audio element.
+</audio>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				Girl i = <span class="keyword">new</span> Girl(<span class="string">"wtw"</span>);<br />
+				Boy u = <span class="keyword">new</span> Boy(<span class="string">"cth"</span>);<br />
+				<span class="comments">// The first time I met you is an afternoon on the interview of points youth corps committee in the most beautiful country in Beijing </span><br />
+				<span class="comments">// Luckily, I met you.</span><br />
+				
+				i.seldom talk To(u);<br />
+				u.have no idea To(i);<br />
+				<span class="comments">//Several times, I go to see your performance,to attend activities organized by you and hear something about you from others</span><br />
+				Freshman reception start();<br />
+				<span class="comments">//I give you a nickname: cth</span><br />
+				i.meet(u);<br />
+				<span class="comments">//For a long time inside and outside of the campus</span><br />
+				u.exhausted();<br />
+				<span class="comments">//I have no idea what happened to you</span><br />
+				<span class="comments">//Gradually, I find you are capable, emotional, sincere.</span><br />
+				
+				<span class="comments">// I've tasted the sweet and bitter of falling love.</span><br />
+				i.letter(u);<br />
+				
+				<span class="comments">//When I write this letter, I have known the result.</span><br />
+				i.appreciate(u);<br />
+				<span class="comments">//You make me go into another myself and accompany me to spend a lot of night by diary</span><br />
+				<span class="comments">// But now I have no idea to eat the forbidden fruit ,</span><br />
+				<span class="comments">// for I value the contact with you.</span><br />
+				<span class="comments">// You said that you have difficult being in a relationship with someone,</span><br />
+				<span class="comments">// Anyway, I'm always here whenever you feel happy or sorrow.</span><br />
+				
+				<span class="keyword">if</span> (u.mood == <span class="string">"happy"</span>)<br />
+				<span class="placeholder"/>u.nextPtr->i;<br />
+				<span class="keyword">else if</span> (u.mood = <span class="string">"sorrow"</span>)<br />
+				<span class="placeholder"/>u.nextPtr->i;<br />
+				<span class="keyword">else</span><br />
+				<span class="placeholder"/>u.nextPtr->i;<br />
+				
+				<span class="keyword">if</span> ((i.age<inf) && (sky.color == <span class="string">"blue"</span>)){<br />
+				<span class="placeholder"/><span class="keyword">print</span>(<span class="string">"I am here."</span>);<br />
+				}<br />
+				<span class="comments">//you are my best friend </span><br />
+				<span class="comments">// and you cannot disappear from my life.</span><br />
+				<a href='http://home.ustc.edu.cn/~zhangqm/wtw/flower.jpg'>flower</a> = i.send(u);
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						cth, we have met for 
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						May you happy every day.<br/>
+						<div class="signature">- wtw</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Copyright ©  2016 <a href='http://home.ustc.edu.cn/~zhangqm/'>wtw</a> Copyfrom © <a href='https://github.com/hackerzhou/Love'>hackerzhou</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2015,07, 04);
+		together.setHours(14);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
